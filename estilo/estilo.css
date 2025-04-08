@@ -1,0 +1,103 @@
+/* 
+Esse * é um seletor universal,ele permite que agente consiga atribuir os estilos a todos
+os elementos da página, todos os elemtnos da pagina vao receber a cor azul
+* {
+ color: bluel;
+} 
+*/
+
+/*muda a cor do corpo do projeto */
+/*body {
+  background-color: antiquewhite; 
+}*/
+
+/*se deixar assim ele pega todos os h5 e coloca na cor azul */
+/*h5 { 
+    color: blue;
+}*/
+
+/*Assim dessa forma abaixo ele coloca a configuração para a tag h1 e h5 dentro da div container */
+/*para chamar uma div pelo nome usa o . antes */
+/*A classe é reconhecida pelo . sempre que for chamar uma classe usa um .seguido do nome da classe */
+/*.container h5,  /*{*/ /*vai chamar a div container e vai mudar a cor somente no h5 dessa DIV container, colocar na cor azul o h5*/
+/*.container h1 {     
+  color:blue; /*coloca a cor na letra */ 
+  /*font-size: 16px; /*tamanho da font da letra no h5*/
+/*}*/
+
+
+/*para chamar uma div pelo nome usa o . antes */
+/*A classe é reconhecida pelo . sempre que for chamar uma classe usa um .seguido do nome da classe */
+.container h5 {  /*{*/ /*vai chamar a div container e vai mudar a cor somente no h5 dessa DIV container, colocar na cor azul o h5*/
+  color:blue; /*coloca a cor na letra */ 
+  font-size: 16px; /*tamanho da font da letra no h5*/
+}  
+
+/*adiciona a font somente na div chamada container e na tag h1 que tem dentro dela */
+.container h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*background-color:aquamarine;*/ /*coloca cor em cima da letra */
+}
+
+ol li h5 {
+  color: blue;
+  font-size: 16px;
+} 
+
+ol h5 {
+  font-size: 16px;
+}
+
+/*muda a cor do corpo do projeto */
+/*se não pegar nenhuma condição la em baixo ai ele pega essa cor para o corpo do site no body */
+ 
+ body {
+   background-color: purple; 
+   
+ }
+
+
+/*Na maioria dos casos fazer o site no adaptativo junto com o responsivo é a melhor
+solução. Tamanhos de layout mais usados são: 320px(é um celular comum),480px(é um
+celular com tela maior),760px(é um tablet),960px(monitor menor,monitor antigo de 
+1024),1200px(monitor pouco menor monitor hd) e 1600px(Esse é um monitor grandão
+full hd de 4k) */
+
+@media (min-width: 1000px) { /*quando a tela tiver pelo menos 1000px de largura ele coloca a tela na cor azul*/
+  body {
+    background-color: blue;
+  }
+}
+
+
+/*QUANDO A TELA TIVER EM 700 E 1000 DE LARGURA ELE EXECUTA ESSA */
+@media (min-width: 700px) and (max-width: 1000px) {
+  body {
+    background-color: antiquewhite;
+  }  
+  
+}
+
+/*quando a tela tiver em 300 e 700 de largura ele executa essa */
+/* @media (min-width: 350px) and (max-width: 700px) {
+  body {
+    background-color:chartreuse
+  }  
+  
+}*/
+
+
+       /*Qaudno a tela tiver numa largura máxima de 600pixels PARA BAIXO ele vai aplicar o que tem ali dentro*/
+       /*MUDA A COR DA TELA PARA AZUL */
+       /*se nao tiver a largura máxima de 600 pixels nao aplica nada */
+/* @media (max-width: 600px) {
+
+  body {
+    background-color: aquamarine;
+  }
+
+  .container h1 {
+    font-size: 15px;
+  }
+}*/
+
