@@ -22,7 +22,7 @@ os elementos da página, todos os elemtnos da pagina vao receber a cor azul
 /*.container h5,  /*{*/ /*vai chamar a div container e vai mudar a cor somente no h5 dessa DIV container, colocar na cor azul o h5*/
 /*.container h1 {     
   color:blue; /*coloca a cor na letra */ 
-  /*font-size: 16px; /*tamanho da font da letra no h5*/
+  /*font-size: 16px; /*tamanho da font da letra no h5.*/
 /*}*/
 
 
@@ -74,8 +74,7 @@ full hd de 4k) */
 @media (min-width: 700px) and (max-width: 1000px) {
   body {
     background-color: antiquewhite;
-  }  
-  
+  }    
 }
 
 /*quando a tela tiver em 300 e 700 de largura ele executa essa */
